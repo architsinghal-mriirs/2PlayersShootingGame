@@ -6,6 +6,7 @@ const score = get("scoreShow");
 const turn = get("playerTurn");
 console.log(turn);
 console.log(shoot);
+console.log(dmg);
 // Event Listeners
 
 // Event on shoot button press
@@ -16,4 +17,9 @@ function get(element) {
   return document.getElementById(element);
 }
 
-function attack() {}
+function dmgCalculator() {
+  let baseDmg = Math.floosr(Math.random() * 9);
+  let randomizer = [0, 1];
+  let critChance = Math.random(...randomizer);
+  console.log(critChance);
+}
